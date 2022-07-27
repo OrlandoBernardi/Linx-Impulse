@@ -6,7 +6,7 @@ const Product = ({ productData }) => {
   const { mockupImg, productContainer, priceContainer, infoContainer } = style
   const { name, image, oldPrice, price, description, installments } = productData
 
-  console.log(id, name, image, oldPrice, price, description, installments)
+  console.log( name, image, oldPrice, price, description, installments)
 
   return (
     <div className={productContainer}>
