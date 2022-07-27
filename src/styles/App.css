@@ -1,0 +1,58 @@
+section {
+    margin-bottom: 10vh;
+}
+
+body {
+    overflow-x: hidden;
+    color: #808080;
+}
+
+.produtos-section,
+.compartilhe-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+}
+
+.produtos-grid {
+    width: 50%;
+    gap: 1rem;
+    display: grid;
+    margin: 50px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.compartilhe-form {
+    display: flex;
+    place-content: center;
+    place-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.compartilhe-input-container {
+    display: flex;
+    margin-bottom: 5rem;
+
+}
+
+.formulario-sec {
+    display: flex;
+    place-content: center;
+    width: 100vw;
+}
+
+@media (max-width: 800px) {
+    .produtos-grid {
+        width: 100%;
+        justify-items: center;
+        grid-template-columns: 1fr;
+        grid-auto-rows: 240px;
+    }
+
+    .compartilhe-input-container {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,31 @@
+.input {
+    padding: 5px;
+    margin: 10px;
+    min-width: 340px;
+    height: 30px;
+}
+
+.radioContainer {
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.radio {
+    margin: 5px;
+}
+
+.inputLabel {
+    color: #888888;
+    font-size: 0.75em;
+}
+
+@media (max-width: 400px) {
+    .input {
+        min-width: unset;
+    }
+}
+
+.inputContainer {
+    display: flex;
+    flex-direction: column;
+}
